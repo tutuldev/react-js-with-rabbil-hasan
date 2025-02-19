@@ -22,7 +22,15 @@ let marks=90;
        {/* inline css  */}
        <p style={{color:'red'}}></p>
       {/* if else  */}
-      {marks>80?<h1>Brilliant</h1>:<h1>Average</h1>}
+      {/* {marks>80?<h1>Brilliant</h1>:<h1>Average</h1>} */}
+
+      {/* imaditly invocable  */}
+      
+      {(
+        ()=>{
+          return "Hellow"
+        }
+      )()}
 
     </div>
   );
