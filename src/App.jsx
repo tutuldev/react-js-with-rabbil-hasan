@@ -1,11 +1,17 @@
-function App() {
+// rsc for react functional component 
 
+import Demo from "./demo";
+
+const App = () => {
   return (
-    <>
+    <div>
+        <h1>I am Learning react</h1>
+        <input placeholder="My Name" />
+        <button>Submit</button>
+        <Demo/>
+        
+    </div>
+  );
+};
 
-      <h1>Hellow React App</h1>
-    </>
-  )
-}
-
-export default App
+export default App;
