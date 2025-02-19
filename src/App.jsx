@@ -1,15 +1,17 @@
 // rsc for react functional component 
 
-import Demo from "./demo";
+import ContactForm from "./components/ContactHome";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
     <div>
-        <h1>I am Learning react</h1>
-        <input placeholder="My Name" />
-        <button>Submit</button>
-        <Demo/>
-        
+       <Header/>
+       <Hero/>
+       <ContactForm/>
+       <Footer/>
     </div>
   );
 };
