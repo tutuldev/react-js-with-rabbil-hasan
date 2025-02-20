@@ -1,24 +1,17 @@
 
 import Hero from "./components/Hero";
 
-
-
-  
   const App = () =>{
-    
-      const ItemObj = {
-        name:'Nirob Hasan',
-        age:33,
-        city:'Dhaka'
-  }
-
+     const BtnClick=()=>{
+        alert("Say Hello !");
+     }
   return(
         <div>
-         <Hero item={ItemObj} />
-         
+         <Hero childBtnClick={BtnClick}/>
         </div>
   );
-
 };
 
 export default App;  
+
+

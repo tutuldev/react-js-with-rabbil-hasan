@@ -1,13 +1,9 @@
 const Hero = (props) => {
     return (
         <div>
-            <ul>
-                <li>Name: {props.item['name']}</li>
-                <li>Age: {props.item['age']}</li>
-                <li>City: {props.item['city']}</li>
-            </ul>
+           <button onClick={props.childBtnClick}>Submit</button>
         </div>
     );
-};
-
-export default Hero;
+  };
+  
+  export default Hero;
