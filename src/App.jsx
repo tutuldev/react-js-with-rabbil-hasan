@@ -3,29 +3,16 @@ import { useRef } from "react";
 
   const App = () =>{
     
-    let firstName,lastName=useRef();
+    let myHeadLine=useRef();
   const change =()=>{
-    // let fname = firstName.current.value;
-    // let lname = lastName.current.value;
-    let fname = firstName.value;
-    let lname = lastName.value;
-
-    alert (fname +" " +lname);
-  
-
+      myHeadLine.current.classList.remove('text-success')
+      myHeadLine.current.classList.add('text-danger')
   }
 
   return(
         <div>
-
-          {/* not working */}
-          {/* <input ref={firstName} placeholder="First Name" /><br></br>
-          <input ref={lastName} placeholder="Last Name" /> */}
-
-
-          <input ref={(a)=>firstName=a} placeholder="First Name" /><br></br>
-          <input ref={(b)=>lastName=b} placeholder="Last Name" />
-          <button onClick={change}>Click</button>
+          <h1 className="text-success" ref={myHeadLine}>This is Headline</h1>
+          <button onClick={change}>Click</button>      
         </div>
   );
 };
