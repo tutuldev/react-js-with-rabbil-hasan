@@ -1,7 +1,7 @@
-const Hero = (props) => {
+const Hero = () => {
     return (
         <div>
-           <button onClick={props.childBtnClick}>Submit</button>
+           <button onClick>Submit</button>
         </div>
     );
   };

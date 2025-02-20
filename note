@@ -253,3 +253,31 @@
 // };
 
 // export default Hero;
+
+
+// passing function with props 
+
+// import Hero from "./components/Hero";
+
+//   const App = () =>{
+//      const BtnClick=()=>{
+//         alert("Say Hello !");
+//      }
+//   return(
+//         <div>
+//          <Hero childBtnClick={BtnClick}/>
+//         </div>
+//   );
+// };
+
+// export default App;  
+
+// const Hero = (props) => {
+//     return (
+//         <div>
+//            <button onClick={props.childBtnClick}>Submit</button>
+//         </div>
+//     );
+//   };
+  
+//   export default Hero;
