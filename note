@@ -189,3 +189,33 @@
 // };
 
 // export default App;  
+
+// passing simple data with props 
+// import Hero from "./components/Hero";
+
+
+
+// const App = () => {
+
+
+//   return(
+//         <div>
+//          <Hero title="Learn React" des="In details how to pass props"/>
+         
+//         </div>
+//   )
+
+// };
+
+// export default App;  
+
+// const Hero = (props) => {
+//     return (
+//         <div>
+//           <h1> {props.title}</h1>
+//           <p>{props.des}</p>
+//         </div>
+//     );
+// };
+
+// export default Hero;
