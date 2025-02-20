@@ -81,3 +81,111 @@
 //   )
 // }
 // };
+
+
+// condiction randering if else with 
+
+// const LoginStatusBtton =(status)=>{
+//     if(status){
+//       return <button>Logout</button>
+//     }else{
+//       return <button>Login</button>
+//     }
+//   }
+  
+//   const App = () => {
+  
+  
+//     return (
+//       <div>
+//         <h1>Login status</h1>
+//         {LoginStatusBtton(false)}
+//       </div>
+//     )
+  
+//   };
+  
+//   export default App;
+
+
+// switch condictional randering 
+
+// const App = () => {
+
+//     const status = false;
+  
+//     switch(status){
+//       case true:
+//         return <button>Logout</button>
+//       case false:
+//         return <button>Login</button>
+//       default:
+//           return null;
+//     }
+  
+//   };
+  
+//   export default App;
+
+
+// // ternary condictional rangering 
+
+// const App = () => {
+
+//     let status = true;
+  
+//     return(
+//           <div>
+//             {
+//               status?<button>Logout</button>: <button>Login</button>
+//             }
+//           </div>
+//     )
+  
+//   };
+  
+//   export default App;
+
+
+
+
+// logical  and and  condictional rangering 
+
+// const App = () => {
+
+//     let status = true;
+  
+//     return(
+//           <div>
+//               <h1>Login Status</h1>
+//             {status && <button>Logout</button>}
+//           </div>
+//     )
+  
+//   };
+  
+//   export default App;
+
+
+// immdeitely invock condictional rangering 
+
+// const App = () => {
+
+//   let status = false;
+
+//   return(
+//         <div>
+//             <h1>Login Status</h1>
+//           {(()=>{
+//             if(status ==true){
+//                   return <button>Logout</button>
+//                   }else{
+//                   return <button>Login</button>
+//                   }
+//           })()}
+//         </div>
+//   )
+
+// };
+
+// export default App;  
