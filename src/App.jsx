@@ -2,31 +2,17 @@
 
   const App = () =>{
     
-    // regular function 
-    function Demo(){
-      alert("clicked")
+    const PostFormData= (event)=>{
+      event.preventDefault();
+      alert('Form Submitted')
     }
-    // arrow function 
-    const Demo1=()=>{
-      alert("clicked")
-    }
+  
   return(
         <div>
-          {/* alert function working when load . is is unwanted  */}
-          {/* <button onClick={alert("clicked")}>Submit</button> */}
-
-          {/* click the alert using arrow function */}
-          {/* <button onClick={()=>{alert("clicked")}}>Submit</button> */}
-
-          {/* click the alert using  function */}
-          {/* <button onClick={
-            function Demo(){
-              alert("clicked")
-            }
-          }>Submit</button> */}
-
-          {/* click the alert using predefind function */}
-          <button onClick={Demo1}>Submit</button>
+          <form onSubmit={PostFormData}>
+            <input placeholder="name" />
+            <button type="submit">Submit</button>
+          </form>
         </div>
   );
 };
