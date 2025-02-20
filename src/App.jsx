@@ -1,16 +1,23 @@
+
 import Hero from "./components/Hero";
 
 
 
-const App = () => {
-
+  
+  const App = () =>{
+    
+      const ItemObj = {
+        name:'Nirob Hasan',
+        age:33,
+        city:'Dhaka'
+  }
 
   return(
         <div>
-         <Hero title="Learn React" des="In details how to pass props"/>
+         <Hero item={ItemObj} />
          
         </div>
-  )
+  );
 
 };
 
